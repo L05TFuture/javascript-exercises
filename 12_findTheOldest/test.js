@@ -1,3 +1,21 @@
+const people = [
+    {
+      name: "Carly",
+      yearOfBirth: 1942,
+      yearOfDeath: 1970,
+    },
+    {
+      name: "Ray",
+      yearOfBirth: 1962,
+      yearOfDeath: 2011,
+    },
+    {
+      name: "Jane",
+      yearOfBirth: 1912,
+      yearOfDeath: 1941,
+    },
+  ]
+
 
 const findTheOldest = function(arrayOfPeople) {
 
@@ -35,17 +53,12 @@ for(let m=0;m<ageArray.length;m++){
     }
 }
 //find who posseses this oldest age in the temp array
-let oldestPersonIndex =   ageArray.indexOf(oldestAge)
+let oldestPersonIndex =   temp.indexOf(oldestAge)
 
  
 
 //return the object(oldest person)
-return oldestPersonIndex //arrayOfPeople[oldestPersonIndex]
+return arrayOfPeople[oldestPersonIndex]
 };
 
-
-//name: "Carly",
-//yearOfBirth: 1942,
-//yearOfDeath: 1970,
-// Do not edit below this line
-module.exports = findTheOldest;
+console.log(findTheOldest(people))

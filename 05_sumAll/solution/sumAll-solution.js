@@ -6,7 +6,7 @@ const sumAll = function (min, max) {
     min = max;
     max = temp;
   }
-
+// you can use multiple if statements to test for diff scenarios without skipping them if one is fufilled
   // An alternative way to swap the values of min and max like above is to use the array destructuring syntax.
   // Here's an optional article on it: https://www.freecodecamp.org/news/array-destructuring-in-es6-30e398f21d10/
   // if (min > max) [min, max] = [max, min];
@@ -17,5 +17,7 @@ const sumAll = function (min, max) {
   }
   return sum;
 };
+
+
 
 module.exports = sumAll;
