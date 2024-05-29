@@ -5,9 +5,11 @@ const findTheOldest = function(arrayOfPeople) {
 let currentYear=2024
 let ageArray=[]
 const findAge = function (person) {
-
-    //if('yearOfDeath' in person) {   
-let age = person.yearOfDeath - person.yearOfBirth
+let age =""
+    if('yearOfDeath' in person) {   
+ age = person.yearOfDeath - person.yearOfBirth}
+else {age = currentYear -person.yearOfBirth}
+return age
 }
 
 //else {
@@ -40,7 +42,7 @@ let oldestPersonIndex =   ageArray.indexOf(oldestAge)
  
 
 //return the object(oldest person)
-return oldestPersonIndex //arrayOfPeople[oldestPersonIndex]
+return arrayOfPeople[oldestPersonIndex]
 };
 
 
