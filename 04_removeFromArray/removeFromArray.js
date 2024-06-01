@@ -1,4 +1,4 @@
-const removeFromArray = function(array, ...args) {
+cdconst removeFromArray = function(array, ...args) {
 
 let newArray=[];
 
